@@ -1,0 +1,100 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'cam_folder.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(872, 761)
+        Form.setStyleSheet("background-color: rgb(78, 140, 255);")
+        self.LIVE = QtWidgets.QLabel(Form)
+        self.LIVE.setGeometry(QtCore.QRect(100, 100, 641, 501))
+        self.LIVE.setFrameShape(QtWidgets.QFrame.Box)
+        self.LIVE.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.LIVE.setLineWidth(3)
+        self.LIVE.setText("")
+        self.LIVE.setScaledContents(True)
+        self.LIVE.setObjectName("LIVE")
+        self.START = QtWidgets.QPushButton(Form)
+        self.START.setGeometry(QtCore.QRect(100, 620, 300, 120))
+        font = QtGui.QFont()
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.START.setFont(font)
+        self.START.setStyleSheet("background-color: rgb(175, 255, 71);\n"
+"")
+        self.START.setObjectName("START")
+        self.SALIR = QtWidgets.QPushButton(Form)
+        self.SALIR.setGeometry(QtCore.QRect(440, 620, 300, 120))
+        font = QtGui.QFont()
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.SALIR.setFont(font)
+        self.SALIR.setStyleSheet("background-color: rgb(255, 26, 60);")
+        self.SALIR.setObjectName("SALIR")
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(490, 10, 271, 81))
+        font = QtGui.QFont()
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setStyleSheet("color: rgb(231, 250, 255);")
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setGeometry(QtCore.QRect(230, 11, 101, 81))
+        font = QtGui.QFont()
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("color: rgb(231, 250, 255);")
+        self.label_2.setObjectName("label_2")
+        self.VIEW_TOMA = QtWidgets.QLabel(Form)
+        self.VIEW_TOMA.setGeometry(QtCore.QRect(335, 12, 141, 81))
+        font = QtGui.QFont()
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.VIEW_TOMA.setFont(font)
+        self.VIEW_TOMA.setStyleSheet("color: rgb(231, 250, 255);")
+        self.VIEW_TOMA.setObjectName("VIEW_TOMA")
+        self.VIEW_IMAGEN = QtWidgets.QLabel(Form)
+        self.VIEW_IMAGEN.setGeometry(QtCore.QRect(580, 10, 271, 81))
+        font = QtGui.QFont()
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.VIEW_IMAGEN.setFont(font)
+        self.VIEW_IMAGEN.setStyleSheet("color: rgb(231, 250, 255);\n"
+"")
+        self.VIEW_IMAGEN.setObjectName("VIEW_IMAGEN")
+
+        self.retranslateUi(Form)
+        self.SALIR.clicked.connect(Form.close)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.START.setText(_translate("Form", "Start"))
+        self.SALIR.setText(_translate("Form", "Salir"))
+        self.label.setText(_translate("Form", "Imagen:"))
+        self.label_2.setText(_translate("Form", "Carpeta:"))
+        self.VIEW_TOMA.setText(_translate("Form", "0"))
+        self.VIEW_IMAGEN.setText(_translate("Form", "0"))
+
